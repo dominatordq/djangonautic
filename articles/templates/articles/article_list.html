@@ -1,13 +1,6 @@
-{% load static from static %}
+{% extends 'base_layout.html' %}
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Articles</title>
-    <link rel="stylesheet" href="{% static 'styles.css' %}">
-</head>
-<body>
+{% block content %} <!--This will be inserted in the block inside baselayout.html-->
     <h1>Article List</h1>
     <div class="articles">
         {% for article in articles %} <!--This allows us to write Python code where no data is outputted-->
@@ -18,5 +11,4 @@
             </div>
         {% endfor %}
     </div>
-</body>
-</html>
+{% endblock %}
