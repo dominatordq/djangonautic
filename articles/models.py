@@ -17,3 +17,12 @@ class Article(models.Model):
     '''
     def __str__(self):
         return self.title
+
+    ''' This function returns a snippet of the body portion of an article
+        when it is displayed in the articles page
+    '''
+    def snippet(self):
+        if(len(self.body) < 50):
+            return self.body
+        else:
+            return self.body[:50] + "..."   # take the first 50 characters
