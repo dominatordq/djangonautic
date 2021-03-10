@@ -1,5 +1,5 @@
-- In the Django Tutorial folder in a command line on Windows, run the command:
-  djangonautic\Scripts\activate.bat.
+- In a command line on Windows, run the command:
+  Scripts\activate.bat.
   This will run Django/Python in a virtual environment
 - Run command:
   py -m pip install Django (if needed)
