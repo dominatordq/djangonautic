@@ -26,3 +26,5 @@
     article.<variable name> = "..."
   - To save this object to the database, type:
     article.save()
+- To create an admin, run command:
+  python manage.py createsuperuser
